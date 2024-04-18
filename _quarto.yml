@@ -21,6 +21,9 @@ website:
       - text: "Home"
         icon: house-fill # https://icons.getbootstrap.com/?q=home
         href: index.qmd
+      - text: "Notes"
+        icon: archive-fill #  archive-fill # https://icons.getbootstrap.com/?q=home
+        href: 01_pnrr.qmd
       - text: "About"
         icon: emoji-smile-fill # https://icons.getbootstrap.com/?q=home
         href: me.qmd
