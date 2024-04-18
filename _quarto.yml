@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs # to publish website on GithubPages
+# --- By default, all valid Quarto input files (.qmd, .ipynb, .md, .Rmd)
+#  will be rendered (NO .file, _dir/)
+  render:
+    - "*.qmd"
+    - "!secret/"
+
+execute:
+  freeze: auto  # Re-render only when source changes
+
+website:
+  title: "pnrr_info"
+  site-url: "https://lulliter.github.io/pnrr_info"
+  
+  navbar:
+    pinned: true
+    background: "#72aed8" # "#b78a92" #  "#0084e6" "#EE6A24"
+    right:
+      - text: "Home"
+        icon: house-fill # https://icons.getbootstrap.com/?q=home
+        href: index.qmd
+      - text: "About"
+        icon: emoji-smile-fill # https://icons.getbootstrap.com/?q=home
+        href: me.qmd
+
+format:
+  html:
+    toc: true
+    toc-location: "left"
+    code-link: true
+    # anchor-sections: true
+    # fig-cap-location: margin
+    # reference-location: margin
+    footnotes-hover: true
+    fontsize: 1em
+    theme: theme/Lulas_theme.scss
+    # css: theme/styles.css
+    ##----- code highlighting style
+    highlight-style: monokai # atom-one # github # dracula
+    mainfont: "Lato"
+    monofont: "Fira Mono"
+
+
+
